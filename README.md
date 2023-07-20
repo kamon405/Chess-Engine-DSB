@@ -17,7 +17,7 @@ The engine is designed to accept commands from standard input. It listens for th
  -position [fen <fenstring> | startpos ] moves <move1> ... <moveN> - Set the board to a certain position and/or apply a sequence of moves.
 
  -go - Instructs the engine to calculate and execute a move. The engine then outputs the best move according to its calculations.
-   It should be noted that the depth of the search tree is capped at 4 for performance considerations.
+   It should be noted that the depth of the search tree is capped at 2 for performance considerations.
 
 ### Requirements
 Python 3.x
