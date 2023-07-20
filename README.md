@@ -12,13 +12,16 @@ A minor random factor is incorporated into the evaluation function to encourage 
 
 The engine is designed to accept commands from standard input. It listens for the following UCI commands within its main loop:
 
-isready: The engine responds with readyok.
-position [fen <fenstring> | startpos ] moves <move1> ... <moveN>: Set the board to a certain position and/or apply a sequence of moves.
-go: Instructs the engine to calculate and execute a move. The engine then outputs the best move according to its calculations.
-It should be noted that the depth of the search tree is capped at 4 for performance considerations.
+ -isready - The engine responds with readyok.
 
-Requirements
+ -position [fen <fenstring> | startpos ] moves <move1> ... <moveN> - Set the board to a certain position and/or apply a sequence of moves.
+
+ -go - Instructs the engine to calculate and execute a move. The engine then outputs the best move according to its calculations.
+   It should be noted that the depth of the search tree is capped at 4 for performance considerations.
+
+### Requirements
 Python 3.x
 python-chess library
-Usage
+
+### Usage
 To use this chess engine, you need to run the bundled executable file. The engine will then listen for UCI commands. You can also set it up as an engine in the Arena Chess GUI by pointing to the executable file in the engine configuration settings.
