@@ -66,7 +66,7 @@ class SimpleEngine:
     def play(self):
         depth = 1
         best_move = self.search(depth)
-        while depth < 2: # Let's cap at depth 4 for performance reasons
+        while depth < 2: # Let's cap at depth 2 for performance reasons
             depth += 1
             try_move = self.search(depth)
             if self.board.is_capture(try_move):
